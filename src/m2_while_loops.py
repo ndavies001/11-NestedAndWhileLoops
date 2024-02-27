@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# Done: 1. (3 pts)
 #
 #   For this _TODO_, write function called count() that takes one parameter:
 #       number  <-- int
@@ -24,9 +24,14 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+def count(number):
+    count = 1
+    while count <= number:
+        print(count)
+        count += 1
+count(5)
 ###############################################################################
-# TODO: 2. (5 pts)
+# Done: 2. (5 pts)
 #
 #   For this _TODO_, write a function called adder() that will continually ask the use to enter a number (using user input) like so:
 #
@@ -48,9 +53,17 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def adder():
+    total = 0
+    num = float(input("Please Enter a Number: "))
+    if num == 0:
+        total += num
+    print("Invalid input. Please enter a valid number.")
 
+    print("The sum is", total)
+adder()
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (3 pts)
+# Done: 3. EXTRA CREDIT (3 pts)
 #
 #   DO NOT attempt this extra credit until you have completed m3!!!
 #   

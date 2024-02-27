@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# done: 1. (3 pts)
 #
 #   For this _TODO_, write a block of code that uses a nested for loop to print
 #   the following output:
@@ -19,9 +19,13 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+for outer in range(1, 3):
+    print("Outer:", outer)
+    for inner in range(1, 4):
+        print("Inner:", inner)
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# Done: 2. (4 pts)
 #
 #   For this _TODO_, write a function called many_triangles() that takes two
 #   parameters:
@@ -49,3 +53,8 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def many_triangles(num_of_triangles, size):
+    for _ in range(num_of_triangles):
+        for i in range(1, size + 1):
+            print('*' * i)
+    print()
